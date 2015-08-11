@@ -34,3 +34,6 @@ RUN cd libcxx/ && cp -r include/* /usr/include/c++/v1/
 RUN cd /usr/lib && ln -sf libc++.so.1.0 libc++.so
 RUN ln -sf libc++.so.1.0 libc++.so.1 && cd $cwd
 
+RUN mkdir /data
+WORKDIR /data
+
